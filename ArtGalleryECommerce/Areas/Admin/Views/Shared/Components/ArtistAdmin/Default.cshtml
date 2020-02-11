@@ -1,0 +1,13 @@
+﻿@model ArtistViewModel
+
+
+<label asp-for="ID">Satatçı Seçin</label>
+<select asp-for="ArtistID" class="form-control">
+    <option class="bg-info" value="@Model.SelectedArtistID">@Model.SelectedArtistName</option>
+    @foreach (var item in Model.Artists)
+    {
+
+        <option value="@item.ID">@item.Name @item.Surname</option>
+
+    }
+</select>

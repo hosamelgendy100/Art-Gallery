@@ -1,0 +1,46 @@
+﻿@model User
+
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">REGISTER</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div><!-- / modal-header -->
+        <div class="modal-body">
+            <form asp-controller="Home" asp-action="AddUser" method="post">
+                <div class="custom-form">
+                    <div class="form-wrapper">
+                        <input type="email" asp-for="EMail" class="form-control mb-3" id="register-email" placeholder="Email Address" required/>
+                        <input type="text" asp-for="Name" class="form-control mb-3" id="register-username" placeholder="Name" pattern="[A-Za-zöÖşŞğĞİüÜıçÇ]+" title="sadece harf girin" required/>
+                        <input type="text" asp-for="Surname" class="form-control mb-3" id="register-username" placeholder="Surname" required/>
+                        <input type="password" asp-for="Password" class="form-control mb-3" id="register-password-input" placeholder="Password" required/>
+                        <input type="text" asp-for="Nationality" pattern="[A-Za-zöÖşŞğĞİüÜıçÇ]+" title="sadece harf girin" class="form-control mb-3" placeholder="Ülke" required/>
+                        <input type="text" asp-for="Address" class="form-control mb-3" placeholder="Address" required/>
+                        <input type="date" asp-for="BirthDate" class="form-control mb-3" placeholder="Birth Date" required/>
+                        <input type="text" asp-for="CitizenshipNo" pattern="[0-9]+" title="sadece rakam girin" class="form-control mb-3" placeholder="Citizenship Number" required/>
+                        <input type="tel" asp-for="PhoneNumber" pattern="[0-9]+" title="sadece rakam girin" class="form-control mb-3" placeholder="Phone Number" required/>
+
+                        @*<input type="password" class="form-control mb-3" id="register-confirm-password" placeholder="Confirm Password">*@
+                        <div class="form-inline-extras sixty-fourty">
+                            <div class="left-area">
+                                <div class="checkbox checkbox-primary ml-1">
+                                    <label class="hidden"><input type="checkbox"></label>
+                                    <input id="checkbox6" type="checkbox">
+                                    <label for="checkbox6">
+                                        I Accept <a href="#x">Terms &amp; Conditions</a>
+                                    </label>
+                                </div><!-- / checkbox -->
+                            </div><!-- / left-area -->
+                            <div class="form-group right-area">
+                                <input type="submit" name="" value="REGISTER" class="btn btn-primary rectangle" />
+                                @*<a class="btn btn-primary rectangle">REGISTER</a>*@
+                            </div><!-- / right-area -->
+                        </div><!-- / form-inline-extras -->
+                    </div><!-- / form-wrapper -->
+                </div><!-- / custom-form -->
+            </form>
+        </div><!-- / modal-body -->
+    </div><!-- / modal-content -->
+</div><!-- / modal-dialog -->

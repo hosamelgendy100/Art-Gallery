@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@*@Html.Partial("_header")*@
+<div class="container mt-5 mb-5">
+    <h2>Merhaba @User.Identity.Name.Split(';')[0], tekrar hoşgeldin.</h2>
+
+    <a asp-controller="Home" asp-action="Index">Ana sayfaya dönmek için tıklayın</a>
+</div>

@@ -1,0 +1,20 @@
+﻿@model ArtGalleryECommerce.Models.ViewModels.ProductTypeViewModel
+
+<!-- gallery filter -->
+<div class="container">
+    <ul class="gallery-filter list-inline text-center">
+        <li><a href="#" data-group="all" class="active ml-2">TÜMÜNÜ GÖSTER | </a></li>
+        @foreach (var item in Model.ProductTypes)
+        {
+            <li><a href="#" data-group="@item.Type"><small>@item.Type.ToUpper() </small> |</a></li>
+        }
+
+
+        @*<li><a href="#" data-group="all" class="active ml-2">SEE ALL</a></li>
+        <li><a href="#" data-group="framed">FRAMED</a></li>
+        <li><a href="#" data-group="print">PRINT</a></li>
+        <li><a href="#" data-group="digital">DIGITAL</a></li>
+        <li><a href="#" data-group="photography">PHOTOGRAPHY</a></li>*@
+    </ul>
+</div>
+<!-- / gallery filter -->

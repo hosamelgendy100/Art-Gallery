@@ -1,0 +1,7 @@
+﻿@model ArtGalleryECommerce.Models.ViewModels.ArtistViewModel
+
+@foreach (var item in Model.Artists)
+{
+    
+    <a class="dropdown-item" asp-route-artistId="@item.ID" asp-controller="Home" asp-action="SetCategory">@item.Name @item.Surname</a>
+}

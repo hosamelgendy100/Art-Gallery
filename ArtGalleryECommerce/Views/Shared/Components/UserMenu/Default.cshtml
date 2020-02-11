@@ -1,0 +1,13 @@
+﻿@model ArtGalleryECommerce.Models.ViewModels.UserViewModel
+
+
+    @foreach (var item in Model.Users)
+    {
+    
+        <a class="dropdown-item" asp-controller="Home" asp-action="SetUser" asp-route-UserID="@item.ID">@item.Name @item.Surname</a>
+    
+    }
+
+@*<a class="dropdown-item active" href="index.html">Main Demo</a>
+    <a class="dropdown-item" href="index2.html">Full Width</a>
+    <a class="dropdown-item" href="index3.html">Full Screen</a>*@

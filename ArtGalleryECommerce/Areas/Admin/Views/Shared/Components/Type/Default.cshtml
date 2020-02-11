@@ -1,0 +1,13 @@
+﻿@model ProductTypeViewModel
+
+
+<label asp-for="Type">Tablo Tipi Seçin</label>
+<select asp-for="ProductTypeID" class="form-control">
+    <option class="bg-info" value="@Model.SelectedProductTypeID">@Model.SelectedProductTypeName</option>
+    @foreach (var item in Model.ProductTypes)
+    {
+
+        <option value="@item.ID">@item.Type</option>
+
+    }
+</select>

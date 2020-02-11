@@ -1,0 +1,79 @@
+﻿@model ArtGalleryECommerce.Models.Product
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductDescription)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProductDescription)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductSize)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProductSize)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ArtistID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ArtistID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductTypeID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProductTypeID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+        <dd>
+            <img src="@Model.Image" alt="@Model.ProductName" height="100px" width="100px"/>
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsActive)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreationDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreationDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductState)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProductState)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,93 @@
+﻿@model ArtGalleryECommerce.Models.Order
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h4>Order</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            @*<div class="form-group">
+                <label asp-for="UserID" class="control-label"></label>
+                <input asp-for="UserID" class="form-control" />
+                <span asp-validation-for="UserID" class="text-danger"></span>
+            </div>*@
+            @*<div class="form-group">
+                <label asp-for="CartID" class="control-label"></label>
+                <input asp-for="CartID" class="form-control" />
+                <span asp-validation-for="CartID" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="ShipName" class="control-label"></label>
+                <input asp-for="ShipName" class="form-control" />
+                <span asp-validation-for="ShipName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShipSurname" class="control-label"></label>
+                <input asp-for="ShipSurname" class="form-control" />
+                <span asp-validation-for="ShipSurname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShipPhone" class="control-label"></label>
+                <input asp-for="ShipPhone" class="form-control" />
+                <span asp-validation-for="ShipPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShipEMail" class="control-label"></label>
+                <input asp-for="ShipEMail" class="form-control" />
+                <span asp-validation-for="ShipEMail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShipAddress" class="control-label"></label>
+                <input asp-for="ShipAddress" class="form-control" />
+                <span asp-validation-for="ShipAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalPrice" class="control-label"></label>
+                <input asp-for="TotalPrice" class="form-control" />
+                <span asp-validation-for="TotalPrice" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                <label asp-for="OrderDate" class="control-label"></label>
+                <input asp-for="OrderDate" class="form-control" />
+                <span asp-validation-for="OrderDate" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="Message" class="control-label"></label>
+                <input asp-for="Message" class="form-control" />
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="IsActive" /> @Html.DisplayNameFor(model => model.IsActive)
+                    </label>
+                </div>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="OrderState" class="control-label"></label>
+                <select asp-for="OrderState" class="form-control">
+                    <option value="Active">Active</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Canceled">Canceled</option>
+                </select>
+                <span asp-validation-for="OrderState" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

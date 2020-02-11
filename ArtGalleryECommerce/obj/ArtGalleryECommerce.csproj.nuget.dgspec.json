@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\WEB TEMPLATES\\.Net Templates\\.Net E-Commerce\\ArtGalleryECommerce-master\\ArtGalleryECommerce-master\\ArtGalleryECommerce\\ArtGalleryECommerce.csproj": {}
+  },
+  "projects": {
+    "F:\\WEB TEMPLATES\\.Net Templates\\.Net E-Commerce\\ArtGalleryECommerce-master\\ArtGalleryECommerce-master\\ArtGalleryECommerce\\ArtGalleryECommerce.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\WEB TEMPLATES\\.Net Templates\\.Net E-Commerce\\ArtGalleryECommerce-master\\ArtGalleryECommerce-master\\ArtGalleryECommerce\\ArtGalleryECommerce.csproj",
+        "projectName": "ArtGalleryECommerce",
+        "projectPath": "F:\\WEB TEMPLATES\\.Net Templates\\.Net E-Commerce\\ArtGalleryECommerce-master\\ArtGalleryECommerce-master\\ArtGalleryECommerce\\ArtGalleryECommerce.csproj",
+        "packagesPath": "C:\\Users\\CODING\\.nuget\\packages\\",
+        "outputPath": "F:\\WEB TEMPLATES\\.Net Templates\\.Net E-Commerce\\ArtGalleryECommerce-master\\ArtGalleryECommerce-master\\ArtGalleryECommerce\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CODING\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.9, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

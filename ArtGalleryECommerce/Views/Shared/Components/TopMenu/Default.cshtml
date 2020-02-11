@@ -1,0 +1,45 @@
+﻿
+
+<div id="preloader" style="display: none;">
+    <div class="preloader">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<div class="top-menu top-menu-primary">
+    <div class="container">
+        <p>
+            <span class="social margin-fix left">
+                <a class="no-margin" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </span>
+            <span class="right">
+                @if (String.IsNullOrEmpty(User.Identity.Name))
+                {
+                    <a href="#x" data-toggle="modal" data-target=".login-modal"><i class="fas fa-user mr-1"></i> <span>Login</span></a>
+                    <a href="#x" data-toggle="modal" data-target=".register-modal"><i class="fas fa-lock mr-1"></i> <span>Register</span></a>
+                }
+                @if (!String.IsNullOrEmpty(User.Identity.Name))
+                {
+
+                    <a asp-controller="Account" asp-action="UserArea" asp-route-userId=""><i class="fas fa-user mr-1"></i> <span>@User.Identity.Name.Split(';')[0]</span></a>
+                    <a asp-controller="Account" asp-action="Logout"><i class="fas fa-lock mr-1"></i> <span>Logout</span></a>
+
+                    @*<li class="nav-item dropdown">
+                <a class="nav-link first-menu-item active dropdown-toggle" href="#x" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                <div class="dropdown-menu drop-to-right animated fadeIn fast" aria-labelledby="dropdown1">
+                    <a class="dropdown-item active" href="index.html">Main Demo</a>
+                    <a class="dropdown-item" href="index2.html">Full Width</a>
+                    <a class="dropdown-item" href="index3.html">Full Screen</a>
+                </div>
+            </li>*@
+                }
+
+            </span>
+        </p>
+    </div><!-- / container -->
+</div><!-- / top-menu -->
